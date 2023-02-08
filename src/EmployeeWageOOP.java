@@ -3,6 +3,7 @@ public class EmployeeWageOOP {
     public static final int EMP_RATE_PER_HOUR = 20;
     public static final int IS_PART_TIME = 2;
     public static final int NO_OF_WORKING_DAYS = 20;
+    public static final int NO_OF_WORKING_HOURS = 100;
     public static int empCheck(){
         int empCheck = (int) Math.floor((Math.random() * 10) % 3);
         return empCheck;
@@ -25,6 +26,7 @@ public class EmployeeWageOOP {
                     empHrs = 0;
             }
             totalHrs+=empHrs;
+            System.out.println("Day#: " + totalWorkingDays + " " + "Emp hr: " + totalHrs);
         }
             totalWage = totalHrs * EMP_RATE_PER_HOUR;
         return totalWage;
