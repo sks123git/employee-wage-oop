@@ -1,6 +1,7 @@
 public class EmployeeWageOOP {
     public static final int IS_FULL_TIME = 1;
     public static final int EMP_RATE_PER_HOUR = 20;
+    public static final int IS_PART_TIME = 2;
     public int empCheck(){
         int empCheck = (int) Math.floor((Math.random() * 10) % 3);
         return empCheck;
@@ -9,6 +10,9 @@ public class EmployeeWageOOP {
         int empHrs = 0;
         int totalWage = 0;
         switch (empCheck) {
+            case IS_PART_TIME: //checking if part time or not
+                empHrs = 4;
+                break;
             case IS_FULL_TIME: //checking if full time or not
                 empHrs = 8;
                 break;
